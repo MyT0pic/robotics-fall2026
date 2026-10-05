@@ -1,0 +1,53 @@
+# Autosaved responses
+
+- Name: Oscar Pan
+- Student ID: 24344304 & oscar.pan04@login.cuny.edu
+- Section: (not provided)
+
+## Check-in answers
+
+### background_compare
+
+The human engineers are responsible for tuning and setting the Kp, Kd, and Ki to find the acceptable intensity of any of those 3 variables in a PID controller depending of the task that the robot is supposed to be performing. This makes a PID a feedback controller because the human engineers can test the state of the PID controller through actual physical experimentation to adjust any of the Kp, Kd, and Ki to balance between accuracy, reliability and trust in regard to the robot's design.
+
+### background_social
+
+For example, a heater, if the tuning of the controller is too aggressive then it's possible that the heat generated will be way too much which might potentially waste unnecessary fuel source, degrading/melting the heater itself, and causing heatstroke to anyone in the environment. On the other hand, if the controller is way too cautiously, the heat generation might be too slow causing the surrounding temperature to remain the same which can cause people who need heat on demand to suffer hypothermia in a cold environment.
+
+### odom_background_wheels
+
+None
+
+### m1_prediction
+
+With too little Kp, I predict that the arm will slowly or maybe not even able to raise the arm at all to a certain position. Additionally, if the Kd is too low, then the arm will not be able to slowly come to a rest or hold onto a specific position with the elbow oscillating around a position.
+
+### m1_arm_tuning
+
+For both the shoulder and elbow controllers, the Kp is decreased to 1.1 and Kd is decreased to 0.5. Based on the visual, the shoulder joint constantly overshoots and undershoots in its oscillations which matches with my initial prediction of oscillation movement of the arm. As for the elbow joint, it also exhibits the same behavior as predicted. The gravity compensation seems to make the Kp and Kd component of the PID controller a lot more aggressive.
+
+### m3_prediction
+
+Increasing forward speed too much or too little derivative control may cause the robot to overshoot the planned route which may lead to possible collision and cautionary response by the pedestrians, and requires the need for the robot to recalculate the correctional route needed to return back to the origin planned route.
+
+### m3_technical
+
+I predicted that less forward velocity and higher Kd control is needed to navigate around the pedestrian safely, otherwise the robot will endanger the pedestrian which matches up with the simulation testing. The next route point becomes a heading command by providing a series of sequential checkpoints to travel through which lead to a complete route from WP1 to WP2 and forth until the last WP4. PID control how the robot steers with Kp being how aggressive the route that the robot should follow through by, Kd being how the robot should slow down before making a sharper turn, and Ki being the last adjustment needed to correct prolong traversal error to be close to the drawn route as much as possible. Although the orange/odometry estimated path isn't displayed at all, I could predict that the inaccurate wheel radius, even with well-tuned PID controller, will follow the wrong physical path because the robot odometry estimates will be either underestimated or overestimated the position itself is in in regard to the routed path that it should follow.
+
+### m3_human
+
+The consequential failure for a pedestrian is most likely injuries or death. There's the safety and well regards to the pedestrians that needs consideration which requires the robot to slow down and proceed with caution, but at the cost of time to finish the assigned task. On the other hand, increasing speed will allow the task to finish faster but at the expense of safety to the pedestrians. Such difficult balancing decision is ultimately up to the responsibility of the robot's creator to make those decisions on the robot's behalf.
+
+## Mission explanations
+
+### mission_1
+
+**prediction**: With too little Kp, I predict that the arm will slowly or maybe not even able to raise the arm at all to a certain position. Additionally, if the Kd is too low, then the arm will not be able to slowly come to a rest or hold onto a specific position with the elbow oscillating around a position.
+
+**tuning_analysis**: For both the shoulder and elbow controllers, the Kp is decreased to 1.1 and Kd is decreased to 0.5. Based on the visual, the shoulder joint constantly overshoots and undershoots in its oscillations which matches with my initial prediction of oscillation movement of the arm. As for the elbow joint, it also exhibits the same behavior as predicted. The gravity compensation seems to make the Kp and Kd component of the PID controller a lot more aggressive.
+
+### mission_3
+
+**technical_analysis**: I predicted that less forward velocity and higher Kd control is needed to navigate around the pedestrian safely, otherwise the robot will endanger the pedestrian which matches up with the simulation testing. The next route point becomes a heading command by providing a series of sequential checkpoints to travel through which lead to a complete route from WP1 to WP2 and forth until the last WP4. PID control how the robot steers with Kp being how aggressive the route that the robot should follow through by, Kd being how the robot should slow down before making a sharper turn, and Ki being the last adjustment needed to correct prolong traversal error to be close to the drawn route as much as possible. Although the orange/odometry estimated path isn't displayed at all, I could predict that the inaccurate wheel radius, even with well-tuned PID controller, will follow the wrong physical path because the robot odometry estimates will be either underestimated or overestimated the position itself is in in regard to the routed path that it should follow.
+
+**human_centered_analysis**: The consequential failure for a pedestrian is most likely injuries or death. There's the safety and well regards to the pedestrians that needs consideration which requires the robot to slow down and proceed with caution, but at the cost of time to finish the assigned task. On the other hand, increasing speed will allow the task to finish faster but at the expense of safety to the pedestrians. Such difficult balancing decision is ultimately up to the responsibility of the robot's creator to make those decisions on the robot's behalf.
