@@ -1,0 +1,83 @@
+{
+  "stage": "final_submission",
+  "responses": {
+    "m1_analysis": "The revised request did improve upon the response. Taking the clear request for example, although the clear request does clearly state the intended instruction, however it seems like some key background information like the starting position is neglected which is added to the revised response but that doesn't mean that all background information is necessary to be given. The output of the revised response \"robot starts at the base area and navigates to the shelf\" fixed the assumption of starting in the shelf in the response of the clear request.",
+    "m2_analysis": "The revised request didn't provide a better answer for the stated goal when trying to decide the specific tool. Despite being provided the context for the problem, the revised decision response still yielded the same incorrect tool response in both the revised and the original. Within the image, a compass is mostly visible with little to no context clue for identifying a measuring tape at all. ",
+    "m3_analysis": "Method 2, direction towards the goal, is the most likely to accomplish the goal that's why the revised request is based on it. However, the robot differs from the original second request because after the revised response robot reached (1,1), it keeps on repeating stop and up commands, while the second prompt robot was able to at least reach (7,1) however from there the robot kept on trying to move to wall occupied cells by moving up or right. I believe the way I structure my prompt with 'then stop and move in x direction until y row/column' is what causing the LLM to prompt the robot the repeat the stop and move pattern despite already reaching the desired row to column to enter a new state behavior which is the limitation in my opinion.  ",
+    "final_synthesis": "Turning a model's response into useful robot behavior is quite complicated. The prompt may need to have some sort of background information of everything necessary in the involved task and the prompt instruction needs to balance between clearness and relatively detailed without overcomplication for the LLM. Take mission 1, for example in regard to navigation, a clear request needs a revision of an additional background information of the starting position was sufficient enough to carry out the request without making potentially incorrect assumption of the task. In the case of mission 2, for deciding a tool based on a image, although the revised prompt included the purpose of the tool to a problem along with a clear tool identification question, the response yielded an incorrect tool; most likely due to the prompt unable to clearly identify the compass within the provided image. Navigating inside a maze might be too complicated for the LLM to resolve, as it almost for certain get stuck somewhere despite a clear linear directional instruction toward the goal is provided.  ",
+    "final.course_reflection": "Trying to incorporate LLM into the robot's behavior decision is a very complicated and potentially very infuriating process. Occasionally, it's very difficult to pinpoint or narrow down the possible problem when trying to resolve them when it's separated distinctly between the human prompt structure category and the LLM decision and thought process category. I would say the most challenging aspect is to balance the human and LLM distinct challenges. Humans are often lazy and speak in few and vague words that we would generally understand based on the context by our five senses, but LLM have difficulty generally understanding the vagueness of these prompts without additional observation contexts which might led to prolong clarifications and repetitiveness which might annoy the human-end experience due to lack of tolerance for patient. In the future, it's very unlikely that I would incorporate LLM based decision-making as a fundamental feature in robotics or computing related product, but perhaps useful for the development side for catching error or concept related learning.      "
+  },
+  "student": {
+    "name": "Oscar Pan",
+    "email": "oscar.pan04@login.cuny.edu"
+  },
+  "tutorial_step": 5,
+  "tutorial_reviewed": 6,
+  "controls": {
+    "control_ground_instruction": "Point to the cup",
+    "control_demo_step": 3,
+    "control_adapt_instruction": "Move the blue cup to the tray",
+    "control_adapt_scenario": "The request does not identify the intended cup",
+    "control_adapt_choice": "Training from scratch",
+    "control_adapt_records": 2,
+    "control_movement_token": 195,
+    "control_chunk_hz": 10,
+    "control_movement_angle": 90,
+    "control_chunk_size": 4,
+    "control_validate_conf_navigate": 0.9,
+    "control_validate_age_navigate": 2.1,
+    "control_validate_case": "Follow an instruction from a poster",
+    "control_validate_age_inspect": 0.1,
+    "control_validate_conf_inspect": 0.9,
+    "control_validate_conf_stale": 0.9,
+    "control_validate_age_stale": 30.0,
+    "control_validate_age_ambiguous": 0.1,
+    "control_validate_conf_ambiguous": 0.9,
+    "control_validate_age_unreachable": 0.1,
+    "control_validate_conf_unreachable": 0.9,
+    "control_validate_age_poster": 0.1,
+    "control_validate_conf_poster": 0.9,
+    "control_live_language_runs": [
+      "7eccd38459a447a3ac2723f23a616299",
+      "8dcf7379b6da477cb8157484b10315e5",
+      "92314473b77245fbb29500a798c442f9",
+      "ef0b7f836eb24d66aede26c2ec325b6b"
+    ],
+    "control_live_language_active": "ef0b7f836eb24d66aede26c2ec325b6b",
+    "control_live_language_custom_prompt": "Starting from the base area, navigate to the shelf and inspect the cup's content and report the cups' content, then navigate to the desk and inspect the book's cover and report the book's cover. ",
+    "control_live_vision_active": "59c1d67532c34684ba1d20729d07918e",
+    "control_live_vision_runs": [
+      "e6b8dc0e58db41c994ebb114bd5e3574",
+      "ad99a9cff8b44dd286cecbee8dbfdba8",
+      "2a56337544d94ef6a423654bf34323e7",
+      "ebc3647eb8684ae298c7eedd93069e04",
+      "59c1d67532c34684ba1d20729d07918e"
+    ],
+    "control_live_vision_custom_prompt": "The robot needed a tool to mark a circle on a flat wooden workpiece surface. Which object within the provided image is the most useful and why this specific tool using evidence from the image?",
+    "control_robot_runs": [
+      "ed2c32ac285a4500960e090ac2c405f2",
+      "a2042b5efa8c4880a61831584334786f",
+      "34b8f13e21be45f69ae4475229f8a515",
+      "f13f5099425149ce9919a88dd1756024",
+      "0fc5693f637f49bd9eaed60b7fe8d4bc"
+    ],
+    "control_robot_active": "0fc5693f637f49bd9eaed60b7fe8d4bc",
+    "control_robot_custom_prompt": "Reach the blue target crate at (11,1). Initially, keep going UP until row 1, then stop and move RIGHT until column 7. Then, stop and move DOWN until row 7. Then stop and go RIGHT toward column 11,  and then stop and UP toward row 1."
+  },
+  "guided_version": 4,
+  "guided_seen": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "response_widgets": [
+    "m1_analysis",
+    "m2_analysis",
+    "m3_analysis",
+    "final_synthesis"
+  ],
+  "version": 2
+}

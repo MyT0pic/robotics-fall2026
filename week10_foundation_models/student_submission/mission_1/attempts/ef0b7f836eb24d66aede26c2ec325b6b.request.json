@@ -1,0 +1,14 @@
+{
+  "job_id": "ef0b7f836eb24d66aede26c2ec325b6b",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Starting from the base area, navigate to the shelf and inspect the cup's content and report the cups' content, then navigate to the desk and inspect the book's cover and report the book's cover.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-15T23:09:02.399949+00:00",
+  "comparison_ids": [
+    "7eccd38459a447a3ac2723f23a616299",
+    "8dcf7379b6da477cb8157484b10315e5",
+    "92314473b77245fbb29500a798c442f9"
+  ]
+}

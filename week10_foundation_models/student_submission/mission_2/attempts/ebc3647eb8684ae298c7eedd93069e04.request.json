@@ -1,0 +1,14 @@
+{
+  "job_id": "ebc3647eb8684ae298c7eedd93069e04",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "The robot needed a tool to mark a circle on a flat wooden workpiece surface. Which object within the provided image is the most useful and why this tool would be useful?",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-16T00:21:19.014828+00:00",
+  "comparison_ids": [
+    "e6b8dc0e58db41c994ebb114bd5e3574",
+    "ad99a9cff8b44dd286cecbee8dbfdba8",
+    "2a56337544d94ef6a423654bf34323e7"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "job_id": "0fc5693f637f49bd9eaed60b7fe8d4bc",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Reach the blue target crate at (11,1). Initially, keep going UP until row 1, then stop and move RIGHT until column 7. Then, stop and move DOWN until row 7. Then stop and go RIGHT toward column 11,  and then stop and UP toward row 1.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-16T00:56:58.893021+00:00",
+  "comparison_ids": [
+    "34b8f13e21be45f69ae4475229f8a515",
+    "a2042b5efa8c4880a61831584334786f",
+    "f13f5099425149ce9919a88dd1756024"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

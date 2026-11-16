@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "ef0b7f836eb24d66aede26c2ec325b6b",
+    "kind": "language",
+    "case": "custom",
+    "prompt": "Starting from the base area, navigate to the shelf and inspect the cup's content and report the cups' content, then navigate to the desk and inspect the book's cover and report the book's cover.",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-15T23:09:02.399949+00:00",
+    "comparison_ids": [
+      "7eccd38459a447a3ac2723f23a616299",
+      "8dcf7379b6da477cb8157484b10315e5",
+      "92314473b77245fbb29500a798c442f9"
+    ],
+    "output": "The robot starts at the base area and navigates to the shelf, inspecting the cup's content and reporting the cup's contents. It then navigates to the desk and inspects the book's cover, reporting the book's cover.",
+    "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "model_revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "system_prompt": "You are helping a mobile robot. It starts at base. It can navigate to base, shelf or desk, inspect a known object, report observations, or stop. There is a cup on the shelf and a book on the desk. The robot has a camera and wheels but no arm or gripper. It cannot pick up or carry objects. Suggest a short plan using only these capabilities. If information is missing, ask a specific clarification question. If the task is impossible for this robot, explain why. Use at most four short sentences.",
+    "model_input": "Starting from the base area, navigate to the shelf and inspect the cup's content and report the cups' content, then navigate to the desk and inspect the book's cover and report the book's cover.",
+    "image_sha256": null,
+    "image_preprocessing": null,
+    "generated_tokens": 48,
+    "max_new_tokens": 96,
+    "generation_seconds": 3.428,
+    "truncated": false,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-15T23:09:05.963181+00:00"
+  }
+}

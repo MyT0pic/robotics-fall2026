@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "record": {
+    "job_id": "ebc3647eb8684ae298c7eedd93069e04",
+    "kind": "vision",
+    "case": "custom",
+    "prompt": "The robot needed a tool to mark a circle on a flat wooden workpiece surface. Which object within the provided image is the most useful and why this tool would be useful?",
+    "phase": "custom",
+    "parent_id": null,
+    "requested_at": "2026-11-16T00:21:19.014828+00:00",
+    "comparison_ids": [
+      "e6b8dc0e58db41c994ebb114bd5e3574",
+      "ad99a9cff8b44dd286cecbee8dbfdba8",
+      "2a56337544d94ef6a423654bf34323e7"
+    ],
+    "output": "The most useful tool in this image is a measuring tape. This is because it is used to mark a circle on a flat wooden workpiece surface. A measuring tape is a common tool used in construction, carpentry, and other trades to measure distances and angles. It is also a useful tool for measuring the thickness of materials, such as wood or metal, to ensure that they are properly cut or shaped",
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "system_prompt": "",
+    "model_input": "The robot needed a tool to mark a circle on a flat wooden workpiece surface. Which object within the provided image is the most useful and why this tool would be useful?",
+    "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+    "image_preprocessing": {
+      "longest_edge": 512,
+      "image_splitting": false
+    },
+    "generated_tokens": 80,
+    "max_new_tokens": 80,
+    "generation_seconds": 6.278,
+    "truncated": true,
+    "decoding": "greedy",
+    "device": "cpu",
+    "live_inference": true,
+    "library_versions": {
+      "torch": "2.8.0+cpu",
+      "transformers": "4.57.1"
+    },
+    "output_constraint": null,
+    "completed_at": "2026-11-16T00:21:35.117977+00:00"
+  }
+}
