@@ -1,0 +1,6 @@
+{
+  "case": "cancel",
+  "phase": "CANCELLED",
+  "message": "Confirm that cancelling request is safe / not safe at this moment.",
+  "rationale": "During the cancellation prompt by the user, the user should be notified of the robot's current status and circumstances that convey the robot's safety to allow stopping or cancelling the current task at the user's request."
+}

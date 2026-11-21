@@ -1,0 +1,1 @@
+The feedback by the robot after receiving and accepting the user's request for cancelling, prompted the robot to report back to the user that cancelling the request at that moment is safe or unsafe to do so.

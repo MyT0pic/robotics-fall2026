@@ -1,0 +1,1 @@
+Take the instance of the scripted trace of "Active task needs an explicit correction" step 4 for example. When a request is commanded while the robot is in its executing phase, the newly submitted request is ignored completely to prevent changes or interruption to the current active task.  

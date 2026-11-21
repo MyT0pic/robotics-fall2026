@@ -1,9 +1,10 @@
 {
   "schema_version": 2,
-  "stage": "lab",
+  "stage": "pid_playground",
   "mission_progress": [
     "mission_1",
-    "mission_2"
+    "mission_2",
+    "mission_3"
   ],
   "missions": {
     "mission_1": {
@@ -4652,5 +4653,5 @@
       ]
     ]
   },
-  "saved_at": "2026-10-04T21:05:39"
+  "saved_at": "2026-10-04T23:19:27"
 }
